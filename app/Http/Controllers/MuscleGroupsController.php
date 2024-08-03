@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\muscle_groups;
-use Illuminate\Http\Request;
+use App\Repositories\MuscleRepository;
 
 class MuscleGroupsController extends Controller
 {
-    function index() 
+    public function muscleCatergories()
     {
-        $groups = muscle_groups::get();
-        return $groups;
+        $repository = new MuscleRepository;
+        return $repository->getAllMuscleGroups();
     }
 }
