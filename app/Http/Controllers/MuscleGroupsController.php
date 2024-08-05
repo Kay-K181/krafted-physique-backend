@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class MuscleGroupsController extends Controller
 {
-    public function muscleCatergories(Request $request): JsonResponse
+    public function index(Request $request): JsonResponse
     {
         $repository = new MuscleRepository;
         return response()->json($repository->getAllMuscleGroups());
