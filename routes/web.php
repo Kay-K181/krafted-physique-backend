@@ -6,4 +6,4 @@ use App\Http\Controllers\MuscleGroupsController;
 
 Route::match(['get'], '/categories', [CategoryController::class, 'index']);
 
-Route::match(['get'], '/muscle-groups', [MuscleGroupsController::class, 'muscleCatergories']);
+Route::match(['get'], '/muscle-groups', [MuscleGroupsController::class, 'index']);
