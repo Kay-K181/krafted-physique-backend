@@ -9,4 +9,4 @@ Route::match(['get'], '/categories', [CategoryController::class, 'index']);
 
 Route::match(['get'], '/muscle-groups', [MuscleGroupsController::class, 'index']);
 
-Route::match(['get'], '/exercises', [ExercisesController::class, 'index']);
+Route::match(['get'], '/top-rated', [ExercisesController::class, 'topRatedFilter']);

@@ -6,7 +6,7 @@ use App\Models\Exercises;
 
 class ExercisesRepository 
 {
-    public function getExercises(){
-        return exercises::get();
+    public function topRated() {
+        return exercises::where('rating', '>=', '4')->get();
     }
 }
