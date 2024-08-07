@@ -8,9 +8,9 @@ use Illuminate\Http\JsonResponse;
 
 class ExercisesController extends Controller
 {
-    public function index(Request $request): JsonResponse
+    public function topRatedFilter(Request $request): JsonResponse
     {
         $repository = new ExercisesRepository;
-        return response()->Json($repository->getExercises());
+        return response()->json($repository->topRated());
     }
 }
