@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'paths' => ['muscle-groups', 'exercises', 'top-rated'],
+    'paths' => ['muscle-groups', 'exercises', 'top-rated', 'chest', 'back', 'shoulders', 'legs', 'arms'],
 
     'allowed_methods' => ['*'],
 
