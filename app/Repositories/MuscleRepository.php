@@ -9,4 +9,5 @@ class MuscleRepository
     public function getAllMuscleGroups() {
         return muscle_groups::get();
     }
+
 }

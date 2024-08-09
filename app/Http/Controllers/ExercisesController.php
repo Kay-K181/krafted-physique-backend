@@ -13,4 +13,34 @@ class ExercisesController extends Controller
         $repository = new ExercisesRepository;
         return response()->json($repository->topRated());
     }
+
+    public function chestExercises(Request $request): JsonResponse
+    {
+        $repository = new ExercisesRepository;
+        return response()->json($repository->chestGroup());
+    }
+
+    public function backExercises(Request $request): JsonResponse
+    {
+        $repository = new ExercisesRepository;
+        return response()->json($repository->backGroup());
+    }
+
+    public function shoulderExercises(Request $request): JsonResponse
+    {
+        $repository = new ExercisesRepository;
+        return response()->json($repository->shoulderGroup());
+    }
+
+    public function legExercises(Request $request): JsonResponse
+    {
+        $repository = new ExercisesRepository;
+        return response()->json($repository->legsGroup());
+    }
+
+    public function armExercises(Request $request): JsonResponse
+    {
+        $repository = new ExercisesRepository;
+        return response()->json($repository->armsGroup());
+    }
 }
